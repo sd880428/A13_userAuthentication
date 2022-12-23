@@ -13,7 +13,7 @@
 ## 安裝與執行:
 1. clone此專案
 ```
-git clone https://github.com/sd880428/A13....git
+git clone https://github.com/sd880428/A13_userAuthentication.git
 ```
 
 2. 使用終端機到此專案目錄下
