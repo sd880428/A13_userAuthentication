@@ -1,1 +1,23 @@
-<h1 class="btn btn-dark">HI! test</h1>
+<div class="container mt-5">
+  <h1 class="row justify-content-center">登入帳號<h1>
+      <div class="mt-5">
+        <form action="/login" method="post">
+          {{!-- email欄 --}}
+          <div class="mb-3 row justify-content-center">
+            <div class="col-sm-5">
+              <input type="email" class="form-control" id="email" placeholder="email" name="email">
+            </div>
+          </div>
+          {{!-- 密碼欄 --}}
+          <div class="mb-3 row justify-content-center">
+            <div class="col-sm-5">
+              <input type="password" class="form-control" id="password" placeholder="password" name="password">
+            </div>
+          </div>
+          {{!-- 送出鍵 --}}
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-primary align-middle" type="submit">登入</button>
+          </div>
+        </from>
+      </div>
+</div>
