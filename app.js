@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 3000
 app.engine('hbs', exphbs.engine({ defaultLayouts: 'main', extname: '.hbs' }))
 app.set('view engine', 'hbs')
 
+app.use(express.urlencoded({ extended: true }))
 app.use(routes)
-
 
 app.listen(PORT, () => {
   console.log('server has started!')

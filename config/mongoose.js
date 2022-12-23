@@ -3,6 +3,7 @@ if (process.env.NODE_ENV !== 'production') { //僅在非正式環境時, 載入 
   require('dotenv').config()
 }
 
+mongoose.set('strictQuery', false)
 mongoose.connect(process.env.MONGODB_URL)
 
 const db = mongoose.connection
