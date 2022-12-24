@@ -3,7 +3,11 @@ const router = express.Router()
 
 
 router.get('/', (req, res) => {
-  res.render('index')
+  if (req.session.authenticated) {
+    res.render('success', { name: req.session.name })
+  } else {
+    res.render('index')
+  }
 })
 
 

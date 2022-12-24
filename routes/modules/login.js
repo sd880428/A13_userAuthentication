@@ -11,9 +11,13 @@ router.post('/', (req, res) => {
       if (!user.length) {
         res.render('index', { fail: true })
       } else {
+        req.session.authenticated = true
+        req.session.name = user[0].firstName
         res.render('success', { name: user[0].firstName })
+        console.log(req.session)
       }
     })
+    .catch(error => console.log(error))
 })
 
 module.exports = router
